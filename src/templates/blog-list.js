@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 import Pagination from "../components/Pagination"
 
-const BlogList = ({ data, pathContext: { currentPage, numPages } }) => {
+const BlogList = ({ data, pageContext: { currentPage, numPages } }) => {
   const postList = data.allMarkdownRemark.edges
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
