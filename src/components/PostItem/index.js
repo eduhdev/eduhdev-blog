@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import getThemeColor from "../../utils/getThemeColor"
 
 import * as S from "./styles"
 
@@ -12,7 +13,13 @@ const PostItem = ({
   title,
   description,
 }) => (
-  <S.PostItemLink to={slug}>
+  <S.PostItemLink
+    to={slug}
+    cover="true"
+    direction="right"
+    bg={getThemeColor()}
+    duration={0.6}
+  >
     <S.PostItemWrapper>
       <S.PostItemTag background={background}>{category}</S.PostItemTag>
       <S.PostItemInfo>
@@ -31,7 +38,7 @@ PostItem.propTypes = {
   background: PropTypes.string,
   category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.string.isRequired,
+  timeToRead: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 }

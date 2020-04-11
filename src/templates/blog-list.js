@@ -27,6 +27,7 @@ const BlogList = ({ data, pageContext: { currentPage, numPages } }) => {
             },
           }) => (
             <PostItem
+              key={title}
               slug={slug}
               background={background}
               category={category}

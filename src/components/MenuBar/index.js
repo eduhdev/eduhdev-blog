@@ -7,6 +7,8 @@ import { Bulb as Light } from "@styled-icons/boxicons-regular/Bulb"
 import { Grid } from "@styled-icons/boxicons-solid/Grid"
 import { ThList as List } from "@styled-icons/typicons/ThList"
 
+import getThemeColor from "../../utils/getThemeColor"
+
 import * as S from "./styles"
 
 const MenuBar = () => {
@@ -24,17 +26,29 @@ const MenuBar = () => {
     window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
 
-  console.log(isListMode)
-
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink to="/" title="Voltar para Home">
+        <S.MenuBarLink
+          cover="true"
+          direction="left"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/"
+          title="Voltar para Home"
+        >
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink to="/search/" title="Procurar no Blog">
+        <S.MenuBarLink
+          cover="true"
+          direction="left"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/search/"
+          title="Procurar no Blog"
+        >
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>
