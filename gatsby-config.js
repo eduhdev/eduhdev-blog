@@ -8,6 +8,7 @@ module.exports = {
     position: `FrontEnd Developer`,
     description: `A blog about frontend development and other cool stuff`,
     author: `@eduhdev`,
+    siteUrl: `https://eduhdev.com.br`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -80,5 +81,6 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
