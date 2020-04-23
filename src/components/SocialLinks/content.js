@@ -5,19 +5,11 @@ const links = [
   },
   {
     label: "Twitter",
-    url: "https://github.com/eduhdev",
+    url: "https://twitter.com/eduhdev",
   },
   {
-    label: "Youtube",
-    url: "https://github.com/eduhdev",
-  },
-  {
-    label: "Instagram",
-    url: "https://github.com/eduhdev",
-  },
-  {
-    label: "Unsplash",
-    url: "https://github.com/eduhdev",
+    label: "Linkedin",
+    url: "https://www.linkedin.com/in/eduhdev",
   },
 ]
 
