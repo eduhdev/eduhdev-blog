@@ -4,8 +4,8 @@ const links = [
     url: "https://github.com/eduhdev",
   },
   {
-    label: "Twitter",
-    url: "https://twitter.com/eduhdev",
+    label: "Gmail",
+    url: "mailto:eduardocarvalho970@gmail.com",
   },
   {
     label: "Linkedin",

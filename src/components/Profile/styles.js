@@ -12,6 +12,7 @@ export const ProfileLink = styled(AniLink)`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
+  cursor: pointer;
 
   ${media.lessThan("large")`
     display: flex;
@@ -37,19 +38,9 @@ export const ProfilePosition = styled.small`
   display: block;
   font-size: 1.2rem;
   font-weight: 300;
+  margin-top: 0.2rem;
 
   ${media.lessThan("large")`
     font-size: 0.8rem;
-    margin-top: 0.2rem;
-  `}
-`
-
-export const ProfileDescription = styled.p`
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.4;
-
-  ${media.lessThan("large")`
-    display: none;
   `}
 `

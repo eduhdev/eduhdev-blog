@@ -22,7 +22,7 @@ const Pagination = ({
         duration={0.6}
         to={prevPage}
       >
-        ← Página Anterior
+        ← Previous Page
       </AniLink>
     )}
     <p>
@@ -36,7 +36,7 @@ const Pagination = ({
         duration={0.6}
         to={nextPage}
       >
-        Próxima Página →
+        Next Page →
       </AniLink>
     )}
   </S.PaginationWrapper>
