@@ -2,7 +2,7 @@
 title: 5 Tips for Boosting Your Productivity While Working Remotely
 description: Practical advices for anyone struggling to stay productive while
   working from home.
-date: 2015-01-03 05:54:23
+date: 2023-02-28 11:01:29
 image: assets/img/desert.jpg
 category: html
 background: "#EB7728"
