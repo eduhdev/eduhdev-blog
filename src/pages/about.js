@@ -19,7 +19,7 @@ const AboutPage = () => (
       <h1>A little about my History 👋</h1>
       
       <p>Hi there! My name is Eduardo Carvalho, a {getAge(birthDate)}-year-old frontend developer from Brazil .</p>
-      <p>My love for technology started at a young age, when I was just 13 years old. I began my career as a computer technician, working on tasks such as mounting, fixing, removing viruses and formatting Windows. It was during this time that I realized that I had a passion for technology and knew that this was the field I wanted to pursue.</p>
+      <p>My love for technology started at a young age, when I was just 13 years old. I began my career as a computer technician, working on tasks such as mounting, fixing, removing virus and formatting Windows. It was during this time that I realized that I had a passion for technology and knew that this was the field I wanted to pursue.</p>
       <p>In 2015, I started my journey in the programmig industry by enrolling in the Analysis and System Development Course. It was during my last semester of this course, in 2017, that I landed my first job as a software developer. This marked the beginning of my career as a developer and I have been dedicated to this field ever since.</p>
       <p>My experience in the industry has taught me the importance of staying up-to-date with the latest technologies and trends. I am always eager to learn and expand my knowledge to continue to grow as a developer.</p>
       <p>In my free time, I love to learn new things. I enjoy reading books and I have a passion for football, both playing and watching it. Spending time with friends and family is important to me and there's nothing better than enjoying a cold beer while listening to some good music.</p>
