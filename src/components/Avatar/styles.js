@@ -8,7 +8,7 @@ export const AvatarWrapper = styled(Img)`
   width: 6rem;
   margin: auto;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("medium")`
     height: 1.875rem;
     width: 1.875rem;
   `}

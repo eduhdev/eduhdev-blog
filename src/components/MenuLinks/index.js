@@ -6,8 +6,9 @@ import links from "./content"
 
 import * as S from "./styles"
 
-const MenuLinks = () => (
-  <S.MenuLinksWrapper>
+const MenuLinks = ({isMenuOpen}) => (
+  <>
+  <S.MenuLinksWrapper isMenuOpen={isMenuOpen}>
     <S.MenuLinksList>
       {links.map(({ label, url }, i) => (
         <S.MenuLinksItem key={i}>
@@ -25,6 +26,7 @@ const MenuLinks = () => (
       ))}
     </S.MenuLinksList>
   </S.MenuLinksWrapper>
+  </>
 )
 
 export default MenuLinks
