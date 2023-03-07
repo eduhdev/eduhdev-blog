@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Profile from "../Profile"
 import SocialLinks from "../SocialLinks"
@@ -6,12 +6,15 @@ import MenuLinks from "../MenuLinks"
 
 import * as S from "./styles"
 
-const Sidebar = () => (
+const Sidebar = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  return (
   <S.SidebarWrapper>
-    <Profile />
+    <Profile onClickMenu={() => setMenuOpen(!menuOpen)} />
     <SocialLinks />
-    <MenuLinks />
+    <MenuLinks isMenuOpen={menuOpen} />
   </S.SidebarWrapper>
-)
+)}
 
 export default Sidebar
