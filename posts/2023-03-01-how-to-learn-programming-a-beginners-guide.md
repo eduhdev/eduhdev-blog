@@ -17,4 +17,4 @@ Learning programming can seem intimidating, but with the right approach, anyone 
 5. Join a community: Learning programming can be a lonely endeavor, but it doesn't have to be. Join online communities, attend meetups, and find a mentor to help you stay motivated and learn from others.
 6. Keep learning: Programming is constantly evolving, and there's always more to learn. Keep up with the latest developments in your language of choice and continue to challenge yourself with new projects and concepts.
 
-Learning programming may seem daunting at first, but with the right resources, mindset, and practice, anyone can master the basics and start building their own projects. Start small, stay motivated, and keep learning, and you'll be on your way to becoming a skilled programmer.
+Start small, stay motivated, and keep learning, and you'll be on your way to becoming a skilled programmer.
