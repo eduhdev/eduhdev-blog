@@ -1,9 +1,7 @@
 ---
 title: 5 Tips for Overcoming Burnout in Software Development
-description: Learn how to manage and overcome burnout in software development
-  with these 5 helpful tips. Prioritize self-care, take breaks, set realistic
-  expectations, seek support, and switch up your routine to prevent burnout and
-  stay productive.
+description: "Learn how to manage and overcome burnout in software development
+  with these 5 helpful tips. "
 date: 2023-03-07 02:16:49
 image: assets/img/desert.jpg
 category: life
