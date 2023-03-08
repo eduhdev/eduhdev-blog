@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 import PostItem from "../components/PostItem"
 import Pagination from "../components/Pagination"
 import * as S from "../components/ListWrapper/styles"
@@ -16,7 +16,7 @@ const BlogList = ({ data, pageContext: { currentPage, numPages } }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <S.ListWrapper>
         {postList.map(
           ({
