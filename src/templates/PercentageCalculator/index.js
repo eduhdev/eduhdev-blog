@@ -11,9 +11,9 @@ import Seo from "../../components/seo"
 import { MainContent } from "../../styles/base"
 import { Wrapper } from "./styles"
 
-const PercentageCalculator = () => {
+const PercentageCalculator = ({ toolsOpened }) => {
   return (
-    <Layout>
+    <Layout toolsOpened={toolsOpened}>
       <Seo
         title="About Me"
         description="I'm a passionate frontend developer with expertise in HTML, CSS, JavaScript, and React. With a strong foundation in programming, problem-solving skills, and a constant desire to learn and grow, I am committed to delivering high-quality web solutions. Let's connect and bring your web project to life."

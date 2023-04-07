@@ -8,12 +8,12 @@ import { dollarPrice, realPrice } from "../../utils"
 
 import { Wrapper } from "./styles"
 
-const HourConverter = () => {
+const HourConverter = ({ toolsOpened }) => {
   let savedHourRate = ""
-  if (typeof window !== 'undefined' && window.localStorage) {
-    savedHourRate = localStorage.getItem('hour-rate') || ""
+  if (typeof window !== "undefined" && window.localStorage) {
+    savedHourRate = localStorage.getItem("hour-rate") || ""
   }
-  const [hourRate, setHourRate] = useState(savedHourRate);
+  const [hourRate, setHourRate] = useState(savedHourRate)
   const [totalHours, setTotalHours] = useState("")
   const [result, setResult] = useState()
   const [dollarRate, setDollarRate] = useState()
@@ -23,7 +23,7 @@ const HourConverter = () => {
     e.preventDefault()
     if (hourRate && totalHours) {
       setResult(hourRate * totalHours)
-      localStorage.setItem('hour-rate', hourRate);
+      localStorage.setItem("hour-rate", hourRate)
     }
   }
 
@@ -53,7 +53,7 @@ const HourConverter = () => {
   }, [])
 
   return (
-    <Layout>
+    <Layout toolsOpened={toolsOpened}>
       <Seo
         title="About Me"
         description="I'm a passionate frontend developer with expertise in HTML, CSS, JavaScript, and React. With a strong foundation in programming, problem-solving skills, and a constant desire to learn and grow, I am committed to delivering high-quality web solutions. Let's connect and bring your web project to life."
@@ -77,7 +77,9 @@ const HourConverter = () => {
             <p>Loading ...</p>
           ) : (
             <>
-              <span className="converter">{dollarPrice(1)} = {realPrice(dollarRate)}</span>
+              <span className="converter">
+                {dollarPrice(1)} = {realPrice(dollarRate)}
+              </span>
               <div className="flex">
                 <p>What's your current hour rate? (in Dollars)</p>
                 <input

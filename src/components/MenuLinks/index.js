@@ -8,8 +8,8 @@ import links from "./content"
 
 import * as S from "./styles"
 
-const MenuLinks = ({ isMenuOpen }) => {
-  const [expanded, setExpanded] = useState(false)
+const MenuLinks = ({ isMenuOpen, toolsOpened = false }) => {
+  const [expanded, setExpanded] = useState(toolsOpened)
 
   return (
     <>

@@ -8,12 +8,12 @@ import MenuBar from "../MenuBar"
 import * as S from "./styles"
 import GlobalStyles from "../../styles/global"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, toolsOpened }) => (
   <>
     <GlobalStyles />
     <S.LayoutWrapper>
       <TransitionPortal level="top">
-        <SideBar />
+        <SideBar toolsOpened={toolsOpened} />
       </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
       <TransitionPortal level="top">
