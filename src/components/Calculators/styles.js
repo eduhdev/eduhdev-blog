@@ -25,13 +25,7 @@ export const Wrapper = styled.div`
         }
 
         input {
-            height: 40px;
             width: 90px;
-            font-size: 18px;
-            border: 1px solid #777;
-            border-radius: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
         }
         button {
             height: 40px;

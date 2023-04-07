@@ -22,3 +22,12 @@ export function formatPercentage(percentage) {
     return percentage
   }
 }
+
+const formatterPrice = (brl) =>
+  new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: brl ? "BRL" : "USD",
+  })
+
+export const dollarPrice = (value) => formatterPrice().format(value)
+export const realPrice = (value) => formatterPrice(true).format(value)

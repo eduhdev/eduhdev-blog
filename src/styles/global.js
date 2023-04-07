@@ -67,6 +67,7 @@ const GlobalStyles = createGlobalStyle`
     --texts: #fafafa;
     --postColor: #fff;
     --highlight: #1fa1f2;
+    --lightBackground: #181b1e;
     --mediumBackground: #192734;
     --background: #16202c;
     --white: #fff;
@@ -92,6 +93,15 @@ const GlobalStyles = createGlobalStyle`
 
   input[type=number] {
     -moz-appearance: textfield;
+  }
+
+  input {
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 `
 export default GlobalStyles
