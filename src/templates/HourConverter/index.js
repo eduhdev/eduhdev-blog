@@ -34,7 +34,7 @@ const HourConverter = ({ toolsOpened }) => {
 
   useEffect(() => {
     var myHeaders = new Headers()
-    myHeaders.append("apikey", "G07QNQ3LJ6k8YwjXUENhGNTFszx0C6TW")
+    myHeaders.append("apikey", process.env.GATSBY_API_LAYER_KEY)
 
     var requestOptions = {
       method: "GET",
