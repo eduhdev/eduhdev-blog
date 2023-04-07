@@ -9,7 +9,11 @@ import { dollarPrice, realPrice } from "../../utils"
 import { Wrapper } from "./styles"
 
 const HourConverter = () => {
-  const [hourRate, setHourRate] = useState(localStorage.getItem('hour-rate') || "");
+  let savedHourRate = ""
+  if (typeof window !== 'undefined' && window.localStorage) {
+    savedHourRate = localStorage.getItem('hour-rate') || ""
+  }
+  const [hourRate, setHourRate] = useState(savedHourRate);
   const [totalHours, setTotalHours] = useState("")
   const [result, setResult] = useState()
   const [dollarRate, setDollarRate] = useState()
