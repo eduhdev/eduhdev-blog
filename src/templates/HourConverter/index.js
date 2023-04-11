@@ -33,21 +33,11 @@ const HourConverter = ({ toolsOpened }) => {
   }
 
   useEffect(() => {
-    var myHeaders = new Headers()
-    myHeaders.append("apikey", process.env.GATSBY_API_LAYER_KEY)
-
-    var requestOptions = {
-      method: "GET",
-      redirect: "follow",
-      headers: myHeaders,
-    }
-
     fetch(
-      "https://api.apilayer.com/currency_data/convert?to=BRL&from=USD&amount=1",
-      requestOptions
+      `https://api.freecurrencyapi.com/v1/latest?apikey=${process.env.GATSBY_API_LAYER_KEY}`
     )
       .then((response) => response.json())
-      .then((data) => setDollarRate(data.result))
+      .then(({data}) => setDollarRate(data.BRL))
       .catch((error) => console.error(error))
       .finally(() => setLoading(false))
   }, [])
@@ -115,7 +105,7 @@ const HourConverter = ({ toolsOpened }) => {
                     {realPrice(hourRate * dollarRate)}
                   </p>
                   <p>
-                    The income is: {dollarPrice(result)} or{" "}
+                    Your income will be: {dollarPrice(result)} or{" "}
                     {realPrice(result * dollarRate)}
                   </p>
                 </div>
