@@ -11,6 +11,13 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KVY90ZDEQ"></script>
+        <script dangerouslySetInnerHTML={{ 
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+          gtag('config', 'G-6KVY90ZDEQ');`}}
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="light">
